@@ -1,0 +1,25 @@
+{
+  "name": "web_script",
+  "version": "1.0.0",
+  "description": "Web automation using Cucumber BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "BDD",
+    "Cucumber",
+    "UI",
+    "Automation"
+  ],
+  "author": "Olufemi Odedeyi",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-xpath": "^1.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
