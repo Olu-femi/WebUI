@@ -1,4 +1,8 @@
 {
+    "baseUrl": "https://tripsportal.staging.vggdev.com/login",
+    "env": {
+
+    },
     "defaultCommandTimeout": 250000,
     "pageLoadTimeout": 250000,
     "ignoreTestFiles": [

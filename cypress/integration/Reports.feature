@@ -5,7 +5,7 @@ Feature: Interact with reports
         Download report in excel or pdf format
         View flight transactions in request log and download the generated report in excel format
 
-@TripsReport
+@focus
 Scenario: Navigate user to trips report view
     Given User has logged in successfully
     When Navigates to Trips report 
@@ -34,3 +34,4 @@ Scenario: Navigate user to monitoring console view
     Given User has logged in successfully
     When Navigates to monitoring console 
     Then I should be redirected to "/monitoring-console" page
+

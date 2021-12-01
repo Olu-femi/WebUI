@@ -14,4 +14,4 @@ Scenario: Login with valid credentials
 Scenario: Login with invalid credentials
     When I input invalid login credentials
     And Click on the login button
-    Then I should be presented with error message "fufu" on an alert modal
+    Then I should be presented with error message "Username/password is incorrect" on an alert modal

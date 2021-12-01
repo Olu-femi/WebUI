@@ -4,7 +4,8 @@ import { loginPage } from "../Pages/loginPage";
 
 Before({tags: "@login"}, function () {
     // This hook will be executed before scenarios tagged with @login
-    cy.visit('https://tripsportal.test.vggdev.com/login');
+    let url = Cypress.config().baseUrl;
+    cy.visit(url);
 
     loginPage.acceptWebsiteCookie();
 });

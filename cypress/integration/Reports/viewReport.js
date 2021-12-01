@@ -1,12 +1,13 @@
-import { After, Before, When } from "cypress-cucumber-preprocessor/steps"
+import { Before, When } from "cypress-cucumber-preprocessor/steps"
 import { element } from "../common/elements";
 import { validate } from "../common/validations";
-import { loginPage } from "../Pages/loginPage";
+import { ReportsPage } from "../Pages/ReportsPage";
 
 
 Before(function () {
     // This hook will be executed before scenarios tagged with @login
-    cy.visit('https://tripsportal.test.vggdev.com/login');
+    let url = Cypress.config().baseUrl;
+    cy.visit(url);
 
     validate.loginAction();
     
@@ -15,6 +16,7 @@ Before(function () {
 
 When(/^Navigates to Trips report$/, () => {
 	element.gotoTripsReport();
+	//ReportsPage.makeSearchCall();
 });
 
 When(/^Navigates to Agent report$/, () => {
