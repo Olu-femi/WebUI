@@ -1,8 +1,5 @@
 {
     "baseUrl": "baseUrl",
-    "env": {
-
-    },
     "defaultCommandTimeout": 250000,
     "pageLoadTimeout": 250000,
     "ignoreTestFiles": [
