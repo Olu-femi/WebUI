@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://tripsportal.staging.vggdev.com/login",
+    "baseUrl": "baseUrl",
     "env": {
 
     },
