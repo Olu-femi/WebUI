@@ -19,7 +19,7 @@ export class loginPage{
         cy.fixture('credentials').as('users');
 
         cy.get('@users').then(cred => {
-            cy.xpath(usernameTextField).first().type(cred.vgg_admin1, {log:false});
+            cy.xpath(usernameTextField).first().type(cred.admin1, {log:false});
 
             cy.xpath(passwordTextField).last().type(cred.password, {log:false});
         })
@@ -29,7 +29,7 @@ export class loginPage{
         cy.fixture('credentials').as('users');
 
         cy.get('@users').then(cred => {
-            cy.xpath(usernameTextField).first().type(cred.vgg_admin2, {log:false});
+            cy.xpath(usernameTextField).first().type(cred.admin2, {log:false});
 
             cy.xpath(passwordTextField).last().type(cred.password, {log:false});
         })
@@ -40,7 +40,7 @@ export class loginPage{
         cy.fixture('credentials').as('users');
 
         cy.get('@users').then(cred => {
-            cy.xpath(usernameTextField).first().type(cred.vgg_admin1, {log:false});
+            cy.xpath(usernameTextField).first().type(cred.admin1, {log:false});
 
             cy.xpath(passwordTextField).last().type(cred.invalid_password, {log:false});
         })
